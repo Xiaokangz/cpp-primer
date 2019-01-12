@@ -1,13 +1,13 @@
 #include <iostream>
-#include <string>
+#include <vector>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-	string total, temp;
+	vector<int> ivec;
+	int temp;
 	while (cin >> temp) {
-		total += ((total.empty() ? "" : " ") + temp);
+		ivec.push_back(temp);
 	}
-	cout << total << endl;
 	return 0;
 }
